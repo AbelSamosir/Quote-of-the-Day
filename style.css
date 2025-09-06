@@ -1,0 +1,142 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(wp5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.block {
+  position: relative;
+  /* Set the width of the element to automatically fit its content */
+  width: fit-content;
+  /* Limit the maximum width of the element to 500 pixels */
+  max-width: 500px;
+
+  /* Arrange the content within the element in a column layout */
+  display: flex;
+  flex-direction: column;
+
+  /* Create space around the element by setting margins */
+  margin: 10px auto;
+
+  /* Add padding within the element */
+  padding: 30px;
+
+  /* Set the font size to 25 pixels */
+  font-size: 25px;
+
+  /* Set the font weight to 700 (bold) */
+  font-weight: 700;
+  transition: background-image 0.5s ease;
+  /* Add a smooth transition */
+
+  background: linear-gradient(80deg, #8accf5, #aadc82);
+}
+
+.background-effect {
+position: absolute;
+/* Position these elements absolutely */
+left: -2px;
+/* Move the elements 2 pixels to the left */
+top: -2px;
+/* Move the elements 2 pixels to the top */
+
+background-size: 400%;
+/* Set the size of the gradient */
+width: calc(100% + 4px);
+/* Make the width slightly larger than the container */
+height: calc(100% + 4px);
+/* Make the height slightly larger than the container */
+z-index: -1;
+/* Place these elements behind the .block content */
+}
+
+/* Define the 'steam' animation using keyframes */
+@keyframes steam {
+  0% {
+    background-position: 0 0;/* Start with the initial background position */
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.block:after {
+  filter: blur(50px);
+  /* Apply a 50px blur to the pseudo-element */
+}
+
