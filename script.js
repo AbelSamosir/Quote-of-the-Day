@@ -41,7 +41,7 @@ function generateQuote() {
   let arrayIndex = Math.floor(Math.random() * quotes.length);
   document.getElementById("quotes").innerHTML = quotes[arrayIndex].quote;
   document.getElementById("author").innerHTML = "– " + quotes[arrayIndex].author;
-  document.getElementById("generate").addEventListener('click', generateQuote);
+  // document.getElementById("generate").addEventListener('click', generateQuote);
   getRandomEmoji();
   randombg()
 }
@@ -84,3 +84,7 @@ function getRandomEmoji() {
   document.getElementById("generate").textContent = emoji + emoji + " Generate a quote " + emoji + emoji;
 }
 getRandomEmoji()
+window.onload=function() {
+  getRandomEmoji()
+  document.getElementById("generate").addEventListener('click', generateQuote);
+}
